@@ -34,6 +34,13 @@ console.log(y)`,
       errors: [{ messageId: 'noUnFinishedPatternMatching' }],
     },
     {
+      code:`fun(match(x)
+      .with(true,()=>{})
+      .with(false,()=>{})
+    )`,
+      errors: [{ messageId: 'noUnFinishedPatternMatching' }],
+    },
+    {
       code: 'match(asdf).with(false, ()=>{}).run()',
       errors: [{ messageId: 'noRunEndingPatternMatching' }]
     },

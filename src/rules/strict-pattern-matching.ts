@@ -45,6 +45,25 @@ const strictPatternMatching = createRule<Options, MessageIds>({
             })
           }
         })
+        .with({
+          arguments:[
+            {
+              type:AST_NODE_TYPES.CallExpression,
+              callee:{
+                type:AST_NODE_TYPES.MemberExpression,
+                property:{
+                  type:AST_NODE_TYPES.Identifier,
+                  name:'with'
+                }
+              },
+            }
+          ]
+        },()=>{
+          context.report({
+            node,
+            messageId: 'noUnFinishedPatternMatching'
+          })
+        })
         .otherwise(ignore)
       },
       ExpressionStatement: function(node){
@@ -87,7 +106,6 @@ const strictPatternMatching = createRule<Options, MessageIds>({
           })
         })
         .otherwise(ignore)
-
       }
     }
   },
