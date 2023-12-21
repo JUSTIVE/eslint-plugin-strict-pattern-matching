@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "es2017": true
+  },
+  "plugins": ["no-boolean-ts-pattern"],
+  "rules": {
+    "no-boolean-ts-pattern/noBooleanPatternMatching": "error"
+  }
+}
