@@ -3,7 +3,7 @@ import { AST_NODE_TYPES } from '@typescript-eslint/utils'
 import { match } from 'ts-pattern'
 
 const createRule = ESLintUtils.RuleCreator(
-  (name) => `https://https://github.com/JUSTIVE/no-boolean-pattern-matching#${name}`
+  (name) => `https://https://github.com/JUSTIVE/strict-pattern-matching#${name}`
 )
 
 const ignore = () => {}
@@ -109,7 +109,7 @@ const strictPatternMatching = createRule<Options, MessageIds>({
       }
     }
   },
-  name: 'no-boolean-pattern-matching',
+  name: ' ',
   meta: {
     type: 'suggestion',
     messages: {

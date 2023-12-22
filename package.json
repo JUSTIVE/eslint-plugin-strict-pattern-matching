@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-strict-pattern-matching",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "prevent using non-exhaustive pattern matching in typescript",
   "keywords": [
     "eslint",
