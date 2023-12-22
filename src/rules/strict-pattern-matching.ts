@@ -109,7 +109,7 @@ const strictPatternMatching = createRule<Options, MessageIds>({
       }
     }
   },
-  name: ' ',
+  name: 'strict-pattern-matching',
   meta: {
     type: 'suggestion',
     messages: {
@@ -121,7 +121,7 @@ const strictPatternMatching = createRule<Options, MessageIds>({
     fixable: 'code',
     schema: [],
     docs: {
-      description: 'Boolean pattern matching is not allowed',
+      description: 'no unexhaustive pattern matching',
 
       recommended: 'error'
     }
