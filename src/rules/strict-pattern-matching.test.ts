@@ -24,6 +24,10 @@ ruleTester.run('strict-pattern-matching', strictPatternMatching, {
       errors: [{ messageId: 'noUnFinishedPatternMatching' }],
     },
     {
+      code:'match(isSuccess).with(true, () => datadogLogs.logger.log(\'inquiriesQuery Complete!\'))',
+      errors: [{ messageId: 'noUnFinishedPatternMatching' }],
+    },
+    {
       code:
 `const x = Math.random() > 0.5
 const y = match(x)
