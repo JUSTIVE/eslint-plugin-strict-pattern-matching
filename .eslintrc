@@ -11,9 +11,9 @@
     "es2017": true
   },
   "plugins": [
-    "no-boolean-ts-pattern"
+    "strict-pattern-matching"
   ],
   "rules": {
-    "no-boolean-ts-pattern/noBooleanPatternMatching": "error"
+    "strict-pattern-matching/strictPatternMatching": "error"
   }
 }
