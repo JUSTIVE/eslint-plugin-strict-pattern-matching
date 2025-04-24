@@ -42,7 +42,14 @@ Then configure the rules you want to use under the rules section.
 ## Rules
 
 <!-- begin auto-generated rules list -->
-TODO: Run eslint-doc-generator to generate the rules list.
+
+🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
+
+| Name                                                                           | Description                                             | 🔧 |
+| :----------------------------------------------------------------------------- | :------------------------------------------------------ | :- |
+| [noUnhandledExhaustiveException](docs/rules/noUnhandledExhaustiveException.md) | no unhandled exhaustive's exception in pattern matching |    |
+| [strictPatternMatching](docs/rules/strictPatternMatching.md)                   | no unexhaustive pattern matching                        | 🔧 |
+
 <!-- end auto-generated rules list -->
 
 
